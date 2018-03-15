@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fancy-to-do",
+  "private_key_id": "91475c0a5e84a43cb606968a3cfabafb7bed0128",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC2qVRYZI18X4W0\n1Whnn+8FiBIa04JH9eoMQsTImd0zFcWtAPoq7Kg/zGTvyX0friGeOMPK07d88t6p\nPgDlIjuNDHDEasJAxrYg/PwdPbqKdOML5pb8ib2mZhjNlkpUe1f0+Fx1rA8T3GQC\nxa3FMhU8nb7JIq333Kucu/QSfjQN1tzFEkrlzmsU0d7rnD7ZVClJa/QUq4YuSQJJ\n12PLOaUwnvNf0d81siPwfa7fYo4l2iiYmvUTbMYrYZrkD/7JHhyH7NayhwhvXJkN\nw6X/hL+88hSVyFUXRcrf6ffaovG4JCcJGD5AcDPx1q8OIWxfXTa0KeU61Et2B5Q4\n3sWtJin1AgMBAAECggEAFCmIt+ERhQL+PUG5LocG2TN13CQwo0TPut673fCt6++h\nTEFpW8eXosMq+RTijNapu09EvWS1QkOEtGW1r5UhwaX35JZsLr5AaE/EfG3N426X\niT7At8t0daObZUYLmlurD81CV3LQjz6qg2vSjIvEsFYxMv5y+YMQJlLQ1CG+GTDI\nJlAZbzHWEahFbVLP8O+xVUQY6LnHUS+J+uzG0/vCr/uN4LBCLhhSXQz0urRavCWv\nfS4LqizLd2Fk5WTfwn0IU65duWQXrsl7dMOfltfUI02JewGdih2SKRV9mlt/Hfox\nau1p+HgSjbpqWnHDF58y8s2YP1HWFWMaBEJaVXkCAQKBgQD4fNKuH23I7DX/Vv+G\nrESGGDHFRD0V1kUdd0nMqdFEpFXYMY8JM4jidK9NcYx1BOaqoba3P8omP3hECsVa\ny781JMSDRy6z/vjrwOCNGU+h3vas1YlChSOOTbgTicMUsBi6z2ZichyaRb0Y4j9y\n+Q9uyQSr8ICu2RVfnBOE2g6RQQKBgQC8LwsIvBHig0MUrXJHghO7pazn7/k7FeEZ\n44NEAvPs6FuVeX35hqNCSMzUzrEH6YSY+HcS23moVniU9ofSXwPI/7EEXsDUTT4o\nFuq6iYKnRpoPMJnuRZWp+A4gDpagv4XRQU8p8qIyfJMJb8DwFDE814VfVgB4VP6u\n8AO2UgS3tQKBgD+O1eiZu2AIIyujmgpdZ82QxLI7aRB71QPbbjH+Qbu3+Qkqa/aj\niuC5jdlWMOIBleqRIIYwt8ketOlag+5cbRTvyZ/2hhieIBdVJ1qP3dF+kUPV/pzY\nJycP9ARzWUWiYUDvKbYGkBBZxCtoO2hyEiN5IUvFYXTXq+LfrhJuIAnBAoGAL4Td\nj24WQhGNTdpigiYZn4e9erABSmdC+UuXKQRp3gfqoHsWUX0rGqDRgGdVEr9n6UzM\nnKlpNhXnyw3ZzEiL5ySR6Z2XqcR7jpoC2enBYUYVvwIxzJYrrcjioDuu05apTubj\n+562UHNemcJrgPRIXqm5lxJbegdUbI5VEaPyZwUCgYA9SZeaSXNFdR3Ql1kCJXqS\n2fXLgg1RNo/g30i8K/KTJgm9DLX9Q/+31pqXxdrkM6ed30CyaJB28pXEhG75zm2C\n2tchoLl7H+1Vxg1Oql3djYAh7NZ/VDX2z9djInogyT+IE62KkQ3ZrOtKTPnQIibq\nasCphVL85fX34rM2KuA1sQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "e-commerce@fancy-to-do.iam.gserviceaccount.com",
+  "client_id": "114504587319394921524",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/e-commerce%40fancy-to-do.iam.gserviceaccount.com"
+}

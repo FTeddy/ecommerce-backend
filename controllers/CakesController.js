@@ -17,8 +17,9 @@ module.exports = {
   },
 
   create : (req, res) => { // need file upload
+    console.log('start cake controller');
     let newCakes = new Cakes({
-      imgUrl: req.body.cloudStoragePublicUrl,
+      imgUrl: req.file.cloudStoragePublicUrl,
       title: req.body.title,
       price: req.body.price
     })
@@ -29,14 +30,17 @@ module.exports = {
           message: "Cakes failed to be created"
         })
       }
-      return res.status(200).send(data)
+      return res.status(200).json({
+        message: 'Successfully added new Cakes',
+        data: createdCakes
+      })
     })
   },
 
   update : (req, res) => { // need file upload
     const id = req.params.id;
     let updateData = {};
-    if (req.body.cloudStoragePublicUrl) {updateData.cloudStoragePublicUrl = req.body.cloudStoragePublicUrl}
+    if (req.file.cloudStoragePublicUrl) {updateData.imgUrl = req.file.cloudStoragePublicUrl}
     if (req.body.title) {updateData.title = req.body.title}
     if (req.body.price) {updateData.price = req.body.price}
 

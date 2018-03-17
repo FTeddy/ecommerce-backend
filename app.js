@@ -11,9 +11,9 @@ const users = require('./routes/users');
 const admin = require('./routes/admin');
 
 const mongoose = require('mongoose')
-let uri = 'mongodb+srv://werkbau:YratyortSevaC5691@devstack-0-hjaoe.mongodb.net/ecommerce'
-let localhost = 'mongodb://localhost/cake-commerce'
-mongoose.connect(localhost)
+let uri = 'mongodb://werkbau:YratyortSevaC5691@devstack-0-shard-00-00-hjaoe.mongodb.net:27017,devstack-0-shard-00-01-hjaoe.mongodb.net:27017,devstack-0-shard-00-02-hjaoe.mongodb.net:27017/ecommerce?ssl=true&replicaSet=devstack-0-shard-0&authSource=admin';
+let localhost = 'mongodb://localhost/cake-commerce';
+mongoose.connect(uri)
 
 
 var app = express();

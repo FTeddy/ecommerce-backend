@@ -5,7 +5,7 @@ module.exports = {
       .limit(30)
       .exec().then(foundCarousel => {
         res.status(200).json({
-          message: 'found carouselsl data',
+          message: 'found carousels data',
           data: foundCarousel
         })
       })
@@ -38,7 +38,7 @@ module.exports = {
   update : (req, res) => { // need file upload
     const id = req.params.id;
     let updateData = {};
-    if (req.body.cloudStoragePublicUrl) {updateData.imgUrl = req.body.imgUrl}
+    if (req.file.cloudStoragePublicUrl) {updateData.imgUrl = req.file.cloudStoragePublicUrl}
     if (req.body.class) {updateData.class = req.body.class}
 
     Carousel.findByIdAndUpdate({ _id : id }, updateData, {new: true})

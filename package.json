@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "prestart": "node getEnv",
+    "getcred": "node getGcsCred",
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www"
   },

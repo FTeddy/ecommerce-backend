@@ -1,14 +1,14 @@
 const Storage = require('@google-cloud/storage');
 
 const config = {
-  CLOUD_BUCKET: 'test-shop.teddydevstack.com',
+  CLOUD_BUCKET: 'ecommerce.teddydevstack.com',
   PROJECT_ID: 'fancy-to-do'
 }
 
 // confirm service api
 const storage = Storage({
   projectId: config.PROJECT_ID,
-  keyFilename: 'fancy-to-do-91475c0a5e84.json'
+  keyFilename: 'fancy-to-do-684a7e877064.json'
 });
 
 
@@ -19,6 +19,7 @@ function storageUrl (filename) {
 
 // middleware
 function googleUpload (req, res, next) {
+  console.log(req.file);
   const bucket = storage.bucket(config.CLOUD_BUCKET)
   console.log(req.file);
   if (!req.file) {
@@ -27,7 +28,7 @@ function googleUpload (req, res, next) {
   }
   let extension = req.file.originalname.split('.').pop()
 
-  const destination = 'pictures/upload/'
+  const destination = 'upload/'
   const uploadName = destination + Date.now() + 'e-com-pic.' + extension;
   const file = bucket.file(uploadName);
 

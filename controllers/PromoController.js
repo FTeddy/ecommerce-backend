@@ -5,7 +5,7 @@ module.exports = {
       .limit(30)
       .exec().then(foundPromo => {
         res.status(200).json({
-          message: 'found Promosl data',
+          message: 'found Promos data',
           data: foundPromo
         })
       })
@@ -17,26 +17,30 @@ module.exports = {
   },
 
   create : (req, res) => { // need file upload
+    console.log('start promo controller');
+    console.log(req.body);
     let newPromo = new Promo({
-      imgUrl: req.body.cloudStoragePublicUrl,
+      imgUrl: req.file.cloudStoragePublicUrl,
       desc: req.body.desc,
-      cakesId: req.cakes._id
     })
-
+    console.log('==============================1111');
     newPromo.save((err,createdPromo)=>{
       if (err) {
         return res.status(500).json({
           message: "Promo failed to be created"
         })
       }
-      return res.status(200).send(data)
+      return res.status(200).json({
+        message: 'Successfully added new Promo',
+        data: createdPromo
+      })
     })
   },
 
   update : (req, res) => { // need file upload
     const id = req.params.id;
     let updateData = {};
-    if (req.body.cloudStoragePublicUrl) {updateData.cloudStoragePublicUrl = req.body.cloudStoragePublicUrl}
+    if (req.file.cloudStoragePublicUrl) {updateData.imgUrl = req.file.cloudStoragePublicUrl}
     if (req.body.desc) {updateData.desc = req.body.desc}
     if (req.body.cakesId) {updateData.cakesId = req.body.cakesId}
 
